@@ -98,7 +98,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Raise";
+            display-name = "characters";
             bindings = <
 &kp ESCAPE        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LEFT_SHIFT    &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
@@ -123,7 +123,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Lower";
+            display-name = "nav";
             bindings = <
 &kp ESCAPE  &kp N1   &kp N2  &kp N3    &kp N4  &kp N5       &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &kp BSPC
 &kp LSHFT   &kp TAB  &win_1  &win_2    &win_3  &none        &win_left       &win_down       &win_up       &win_right       &none   &none
