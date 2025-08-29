@@ -13,49 +13,49 @@
         win_left: win_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp LEFT_ARROW>;
+            bindings = <&kp LG(LEFT_ARROW)>;
             label = "WIN_LEFT";
         };
 
         win_down: win_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp DOWN_ARROW>;
+            bindings = <&kp LG(DOWN_ARROW)>;
             label = "WIN_DOWN";
         };
 
         win_up: win_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp UP_ARROW>;
+            bindings = <&kp LG(UP_ARROW)>;
             label = "WIN_UP";
         };
 
         win_right: win_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp RIGHT_ARROW>;
+            bindings = <&kp LG(RIGHT_ARROW)>;
             label = "WIN_RIGHT";
         };
 
         win_1: win_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp NUMBER_1>;
+            bindings = <&kp LG(NUMBER_1)>;
             label = "WIN_1";
         };
 
         win_2: win_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp NUMBER_2>;
+            bindings = <&kp LG(NUMBER_2)>;
             label = "WIN_2";
         };
 
         win_3: win_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp NUMBER_3>;
+            bindings = <&kp LG(NUMBER_3)>;
             label = "WIN_3";
         };
     };
