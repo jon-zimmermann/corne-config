@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -37,6 +36,27 @@
             bindings = <&kp LGUI &kp RIGHT_ARROW>;
             label = "WIN_RIGHT";
         };
+
+        win_1: win_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp NUMBER_1>;
+            label = "WIN_1";
+        };
+
+        win_2: win_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp NUMBER_2>;
+            label = "WIN_2";
+        };
+
+        win_3: win_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp NUMBER_3>;
+            label = "WIN_3";
+        };
     };
 
     keymap {
@@ -58,7 +78,7 @@
             >;
         };
 
-        lower_layer {
+        nav {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -67,10 +87,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6          &kp N7          &kp N8        &kp N9           &kp N0  &kp BSPC
+&none      &none   &win_1  &win_2    &win_3  &none        &win_left       &win_down       &win_up       &win_right       &none   &none
+&kp LSHFT  &none   &none   &none     &none   &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none   &none
+                           &kp LGUI  &trans  &kp SPACE    &kp RET         &kp LCTRL       &kp RALT
             >;
         };
 
