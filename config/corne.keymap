@@ -89,6 +89,8 @@
 &kp LCTRL   &kp Y  &kp X  &kp C     &kp V      &kp B        &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &lt 4 QUESTION
                           &kp LGUI  &lt 3 TAB  &kp SPACE    &kp RET  &mo_tog_layer 1 2  &kp RALT
             >;
+
+            label = "base";
         };
 
         characters {
@@ -114,6 +116,8 @@
 &kp LEFT_CONTROL  &none         &none         &none         &none         &none     &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp SLASH
                                               &trans        &trans        &trans    &kp ENTER     &trans        &kp N0
             >;
+
+            label = "num";
         };
 
         nav {
@@ -139,6 +143,8 @@
 &trans  &none   &none   &none   &none   &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &none
                         &none   &none   &none     &none         &bt BT_CLR      &kp K_MUTE
             >;
+
+            label = "controls";
         };
     };
 };
